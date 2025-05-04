@@ -1,4 +1,4 @@
-let myObject = {
+/*let myObject = {
     'name':'Flo',
     'age':45,
     'job1': {
@@ -12,10 +12,12 @@ let myObject = {
 
 };
 
+console.table(myObject);
+
 let objKey = 'job' +1
 console.log(myObject[objKey]);
 
-console.table(myObject);
+
 
 
 let myObject1 = {
@@ -37,7 +39,8 @@ let myObject2 = {
     'goo_guy':true,
 };
 
-let objKeys = Object.keys(myObject2)
+let objKeys = Object.keys(myObject2);
+
 let ourArray = []
 
 for (let i = 0; i < objKeys.length; i++) {
@@ -45,4 +48,33 @@ for (let i = 0; i < objKeys.length; i++) {
     ourArray.push(myObject2[objKeys[i]])
 }
 
-console.log(ourArray);
+console.log(ourArray)
+*/
+
+let myObjectArr = [
+    {
+        "name":"Max",
+        "is_a_good_guy": true
+    },
+    {
+        "name":"Peter",
+        "is_a_good_guy": false
+    },
+    {
+        "name":"Arnold",
+        "is_a_good_guy": true
+    },
+    {
+        "name":"justus",
+        "is_a_good_guy": true
+    },
+    {
+        "name":"Bombur",
+        "is_a_good_guy": false
+    }
+
+];
+
+console.log(
+    myObjectArr.filter((element) => {return element['is_a_good_guy'] == true})
+);
